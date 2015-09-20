@@ -1,0 +1,19 @@
+﻿2015-09-20 19:21:59,119 [11] INFO  Umbraco.Core.CoreBootManager - [P8760/T1/D2] Umbraco 7.2.8 application starting on ANNA
+2015-09-20 19:21:59,149 [11] INFO  Umbraco.Core.PluginManager - [P8760/T1/D2] Determining hash of code files on disk
+2015-09-20 19:21:59,156 [11] INFO  Umbraco.Core.PluginManager - [P8760/T1/D2] Hash determined (took 6ms)
+2015-09-20 19:21:59,161 [11] INFO  Umbraco.Core.PluginManager - [P8760/T1/D2] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2015-09-20 19:21:59,329 [11] INFO  Umbraco.Core.PluginManager - [P8760/T1/D2] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 37 (took 167ms)
+2015-09-20 19:21:59,374 [11] INFO  Umbraco.Core.PluginManager - [P8760/T1/D2] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2015-09-20 19:21:59,377 [11] INFO  Umbraco.Core.PluginManager - [P8760/T1/D2] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 2ms)
+2015-09-20 19:21:59,377 [11] INFO  Umbraco.Core.PluginManager - [P8760/T1/D2] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2015-09-20 19:21:59,380 [11] INFO  Umbraco.Core.PluginManager - [P8760/T1/D2] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 16 (took 2ms)
+2015-09-20 19:21:59,393 [11] INFO  Umbraco.Core.PluginManager - [P8760/T1/D2] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2015-09-20 19:21:59,395 [11] INFO  Umbraco.Core.PluginManager - [P8760/T1/D2] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 4 (took 2ms)
+2015-09-20 19:21:59,395 [11] INFO  Umbraco.Core.PluginManager - [P8760/T1/D2] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2015-09-20 19:21:59,398 [11] INFO  Umbraco.Core.PluginManager - [P8760/T1/D2] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 35 (took 2ms)
+2015-09-20 19:21:59,424 [11] INFO  Umbraco.Core.PluginManager - [P8760/T1/D2] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2015-09-20 19:21:59,426 [11] INFO  Umbraco.Core.PluginManager - [P8760/T1/D2] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 2ms)
+2015-09-20 19:21:59,426 [11] INFO  Umbraco.Core.PluginManager - [P8760/T1/D2] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2015-09-20 19:21:59,429 [11] INFO  Umbraco.Core.PluginManager - [P8760/T1/D2] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 2ms)
+2015-09-20 19:21:59,818 [11] INFO  Umbraco.Core.CoreBootManager - [P8760/T1/D2] Umbraco application startup complete (took 695ms)
+2015-09-20 19:22:00,026 [11] INFO  Umbraco.Core.ApplicationContext - [P8760/T1/D2] ApplicationUrl: http://localhost:52381/umbraco (UmbracoModule request)

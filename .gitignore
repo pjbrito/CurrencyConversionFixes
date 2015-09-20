@@ -1,0 +1,11 @@
+[Bb]in
+[Oo]bj/
+[Dd]ebug*/
+[Rr]elease*/
+Thumbs.db
+*.user
+*.suo
+*.bak
+*.cache
+*.ilk
+*.log
