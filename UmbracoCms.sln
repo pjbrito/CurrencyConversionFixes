@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoCms", "UmbracoCms\UmbracoCms.csproj", "{C0DC7563-BD27-419F-A048-8514C824DA0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{44D78ABC-065F-4668-AD99-A2AA399063F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{7F5853F3-DE69-4E31-A396-C81A00B48A4D}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{ED7662AE-44BE-4BAC-8298-0A52245045E1}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\UmbracoCms.json = PublishScripts\Templates\UmbracoCms.json
+		PublishScripts\Templates\UmbracoCms.param.dev.json = PublishScripts\Templates\UmbracoCms.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0DC7563-BD27-419F-A048-8514C824DA0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0DC7563-BD27-419F-A048-8514C824DA0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0DC7563-BD27-419F-A048-8514C824DA0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0DC7563-BD27-419F-A048-8514C824DA0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7F5853F3-DE69-4E31-A396-C81A00B48A4D} = {44D78ABC-065F-4668-AD99-A2AA399063F7}
+		{ED7662AE-44BE-4BAC-8298-0A52245045E1} = {44D78ABC-065F-4668-AD99-A2AA399063F7}
+	EndGlobalSection
+EndGlobal

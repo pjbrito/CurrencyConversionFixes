@@ -1,0 +1,6 @@
+C:\Users\Anna Muzychak\Desktop\projs\UmbracoCms\UmbracoCms\bin\UmbracoCms.dll.config
+C:\Users\Anna Muzychak\Desktop\projs\UmbracoCms\UmbracoCms\bin\UmbracoCms.dll
+C:\Users\Anna Muzychak\Desktop\projs\UmbracoCms\UmbracoCms\bin\UmbracoCms.pdb
+C:\Users\Anna Muzychak\Desktop\projs\UmbracoCms\UmbracoCms\obj\Debug\UmbracoCms.csprojResolveAssemblyReference.cache
+C:\Users\Anna Muzychak\Desktop\projs\UmbracoCms\UmbracoCms\obj\Debug\UmbracoCms.dll
+C:\Users\Anna Muzychak\Desktop\projs\UmbracoCms\UmbracoCms\obj\Debug\UmbracoCms.pdb

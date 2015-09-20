@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "umbracopaulobrito"
+  },
+  "hostingPlanName": {
+    "value": "AzurePlanTest1"
+  },
+  "siteLocation": {
+    "value": "North Europe"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "74f9f3fe-3a22-47f2-b469-c0ce343f2eea"
+  },
+  "resourceGroup": {
+    "value": "AzureGroupTest1"
+  }
+}
