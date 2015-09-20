@@ -1260,3 +1260,46 @@ System.Exception: Cannot index queue items, the index doesn't exist!,, IndexSet:
 2015-09-20 20:54:35,475 [133] INFO  Umbraco.Web.Search.ExamineEvents - [P3708/T140/D21] Initializing Examine and binding to business logic events
 2015-09-20 20:54:35,515 [133] INFO  Umbraco.Web.Search.ExamineEvents - [P3708/T140/D21] Adding examine event handlers for index providers: 3
 2015-09-20 20:54:35,520 [133] INFO  Umbraco.Core.CoreBootManager - [P3708/T140/D21] Umbraco application startup complete (took 1125ms)
+2015-09-20 21:07:04,339 [6] INFO  Umbraco.Core.CoreBootManager - [P1912/T1/D2] Umbraco 7.2.8 application starting on ANNA
+2015-09-20 21:07:04,369 [6] INFO  Umbraco.Core.PluginManager - [P1912/T1/D2] Determining hash of code files on disk
+2015-09-20 21:07:04,377 [6] INFO  Umbraco.Core.PluginManager - [P1912/T1/D2] Hash determined (took 6ms)
+2015-09-20 21:07:04,385 [6] INFO  Umbraco.Core.PluginManager - [P1912/T1/D2] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2015-09-20 21:07:04,552 [6] INFO  Umbraco.Core.PluginManager - [P1912/T1/D2] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 37 (took 166ms)
+2015-09-20 21:07:04,603 [6] INFO  Umbraco.Core.PluginManager - [P1912/T1/D2] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2015-09-20 21:07:04,606 [6] INFO  Umbraco.Core.PluginManager - [P1912/T1/D2] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 3ms)
+2015-09-20 21:07:04,607 [6] INFO  Umbraco.Core.PluginManager - [P1912/T1/D2] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2015-09-20 21:07:04,611 [6] INFO  Umbraco.Core.PluginManager - [P1912/T1/D2] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 16 (took 3ms)
+2015-09-20 21:07:04,624 [6] INFO  Umbraco.Core.PluginManager - [P1912/T1/D2] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2015-09-20 21:07:04,626 [6] INFO  Umbraco.Core.PluginManager - [P1912/T1/D2] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 4 (took 2ms)
+2015-09-20 21:07:04,626 [6] INFO  Umbraco.Core.PluginManager - [P1912/T1/D2] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2015-09-20 21:07:04,629 [6] INFO  Umbraco.Core.PluginManager - [P1912/T1/D2] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 35 (took 2ms)
+2015-09-20 21:07:04,655 [6] INFO  Umbraco.Core.PluginManager - [P1912/T1/D2] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2015-09-20 21:07:04,657 [6] INFO  Umbraco.Core.PluginManager - [P1912/T1/D2] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 2ms)
+2015-09-20 21:07:04,657 [6] INFO  Umbraco.Core.PluginManager - [P1912/T1/D2] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2015-09-20 21:07:04,660 [6] INFO  Umbraco.Core.PluginManager - [P1912/T1/D2] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 3ms)
+2015-09-20 21:07:05,842 [6] INFO  Umbraco.Core.DatabaseContext - [P1912/T1/D2] CanConnect = True
+2015-09-20 21:07:05,847 [6] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - [P1912/T1/D2] Initializing Umbraco internal event handlers for cache refreshing
+2015-09-20 21:07:05,861 [6] INFO  Umbraco.Web.Search.ExamineEvents - [P1912/T1/D2] Initializing Examine and binding to business logic events
+2015-09-20 21:07:05,897 [6] INFO  Umbraco.Web.Search.ExamineEvents - [P1912/T1/D2] Adding examine event handlers for index providers: 3
+2015-09-20 21:07:05,905 [6] INFO  Umbraco.Core.CoreBootManager - [P1912/T1/D2] Umbraco application startup complete (took 1561ms)
+2015-09-20 21:07:06,117 [6] INFO  Umbraco.Core.ApplicationContext - [P1912/T1/D2] ApplicationUrl: http://localhost:52381/umbraco (UmbracoModule request)
+2015-09-20 21:07:06,150 [6] INFO  umbraco.content - [P1912/T1/D2] Load Xml from file...
+2015-09-20 21:07:06,157 [6] ERROR umbraco.content - [P1912/T1/D2] Failed to load Xml from file.
+System.Xml.XmlException: There is no Unicode byte order mark. Cannot switch to Unicode.
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ThrowWithoutLineInfo(String res)
+   at System.Xml.XmlTextReaderImpl.CheckEncoding(String newEncodingName)
+   at System.Xml.XmlTextReaderImpl.ParseXmlDeclaration(Boolean isTextDecl)
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   at System.Xml.XmlDocument.Load(XmlReader reader)
+   at System.Xml.XmlDocument.Load(Stream inStream)
+   at umbraco.content.LoadXmlFromFile()
+2015-09-20 21:07:06,161 [6] INFO  umbraco.content - [P1912/T1/D2] Loading content from database...
+2015-09-20 21:07:08,184 [6] INFO  Umbraco.Core.PluginManager - [P1912/T1/D2] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2015-09-20 21:07:08,188 [6] INFO  Umbraco.Core.PluginManager - [P1912/T1/D2] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 23 (took 3ms)
+2015-09-20 21:07:08,344 [6] INFO  Umbraco.Core.PluginManager - [P1912/T1/D2] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2015-09-20 21:07:08,351 [6] INFO  Umbraco.Core.PluginManager - [P1912/T1/D2] Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 44 (took 6ms)
+2015-09-20 21:07:12,020 [6] INFO  umbraco.content - [P1912/T1/D2] Save Xml to file...
+2015-09-20 21:07:12,023 [6] INFO  umbraco.content - [P1912/T1/D2] Saved Xml to file.
+2015-09-20 21:08:09,808 [6] INFO  umbraco.BusinessLogic.Log - [P1912/T1/D2] Log scrubbed.  Removed all items older than 2015-07-22 21:08:09
