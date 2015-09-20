@@ -276,6 +276,7 @@
     <Content Include="img\u332.png" />
     <Content Include="img\ukflag.png" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\bower_components\jsgrid\dist\jsgrid.min.js" />
     <Content Include="js\currency-widget.js" />
     <Content Include="js\data.js" />
     <Content Include="js\jquery-ui.min.js" />
