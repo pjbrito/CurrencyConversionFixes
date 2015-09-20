@@ -1,0 +1,115 @@
+/* CSS file */
+@charset "utf-8";
+	#calculatorForm, #amount, .amount, #amountCounted, #from-button, #to-button,
+	#arrow-hor, #arrow-vert 
+	{
+		position: relative; float: left;
+	}
+	#calculatorForm {
+		font-family: "AvenirNextLTW01-Regular"; text-align: center;
+		line-height: 1.6em; font-size: 1.5em; color: white; min-width: 310px;
+	}
+	#calculatorForm .orangeButton {
+		font-size: .9em;
+	}
+	#calculatorForm .layer {margin-top: 2em; margin-right: 0;}
+	#calculatorForm h2 {font-size: 1.2em; margin-bottom: 1em;}
+	#calculatorForm input[type="text"], #calculatorForm input[type="tel"]
+	{
+		background: transparent; color: #fff; line-height: inherit; font: inherit;
+		width: 90%; border: none; text-align: center; font-size: 1.2em;
+		box-shadow: none;
+	}
+	#calculatorForm .amount, #amountCounted, #from-button, #to-button {
+		background: rgba(0, 0, 0, .2); font: inherit; line-height: inherit;
+	}
+	.column40 #calculatorForm, .mainPage #calculatorForm {width: 100%; margin: 0;}
+	.column40 #calculatorForm .amount, .column50 #calculatorForm .amount, .column60 #calculatorForm .amount
+	{
+		width: 46%; margin: 1%; border: .12em solid #fff;
+	}
+	.column40 #amountCounted, .column50 #amountCounted, .column60 #amountCounted {
+		width: 44%; margin: 1%; font-size: 1.2em; border: .1em solid #fff;
+	}
+	.column40 #from-button, .column50 #to-button,
+	.column50 #from-button, .column50 #to-button, 
+	.column60 #from-button, .column50 #to-button, 
+	{
+		width: 18% !important;  margin: 1%;
+	}
+	
+	.column40 #arrow-hor, .column50 #arrow-hor, .column60 #arrow-hor {display: none;}
+	.column40 #arrow-vert, .column50 #arrow-vert, .column60 #arrow-vert {
+		margin-bottom: -1em; top: .17em;
+	}
+	
+	#arrow-hor, #arrow-vert {
+		color: orange; margin: 0em;	transition: all .2s; -webkit-transition:  all .2s;
+		cursor: pointer; text-shadow: -.1em .1em 2em #000; width: 5%;  margin: 1%;
+	}
+	
+	#from-button, #to-button {
+		font: inherit; color: #fff; padding: 0px 1em 0px 1em !important;
+		width: auto; text-align: center; line-height: inherit;
+		border: .12em solid; border-radius: 1em; vertical-align: middle;
+	}
+	#from-button span, #to-button span {padding: 0; text-align: center;}
+	#from-menu, #to-menu {
+		font: inherit; max-height: 15em !important; width: 20em !important; line-height: inherit;
+		background: rgba(0,0,0,.4); color: #fff; border-radius: 1em;
+	}
+	.ui-selectmenu-button span.ui-selectmenu-text {line-height: inherit;}
+	.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover,
+	.ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+		background: rgba(0, 0, 0, .4); color: #fff; border: none; font-weight: lighter;
+		margin: 0;
+	}
+
+	/* Currency symbols */
+		.GBP:before, .EUR:before, .USD:before, .JPY:before
+		{
+			position: relative; float: left; display: inline-block;
+		}
+		.GBP:before{content: "£";}
+		.EUR:before{content: "€";}
+		.USD:before{content: "$";}
+		.JPY:before{content: "¥";}
+	/* ./end of Currency symbols */
+
+
+@media only screen and (min-width: 240px){
+	#calculatorForm {width: 100%; margin-left: 0%;}
+	.mainPage #calculatorForm {width: 100%; margin-left: 0%;}
+	#calculatorForm .amount {width: 40%; margin: 1%; border: .12em solid #fff;}
+	#amountCounted {width: 38%; margin: 1%; font-size: 1.2em; border: .1em solid #fff;  clear: both;}
+	#from-button, #to-button {width: 15% !important;  margin: 1%;}
+	#arrow-hor, #arrow-vert {width: 5%;  margin: 1%;	} 
+	#arrow-hor {display: none;}
+	#arrow-vert {margin-bottom: -1em; top: .17em; display: inline-block;}	
+}
+	
+@media only screen and (min-width: 480px) { 						/* smaller medium screens */
+	.mainPage #calculatorForm {width: 80%; margin-left: 20%;}
+	#calculatorForm {width: 90%; margin-left: 10%;}
+}
+
+@media only screen and (min-width: 768px){
+	.mainPage #calculatorForm {width: 100%; margin-left: 0%;}
+	.mainPage #calculatorForm .amount {width: 24%;}
+	.mainPage #amountCounted {width: 22%; clear: none;}
+	.mainPage #from-button, .mainPage #to-button {width: 8% !important; margin: 1%;}
+	.mainPage #arrow-hor, .mainPage #arrow-vert {width: 5%;  margin: 1% .5% .5% .5%;} 
+	.mainPage #arrow-hor {display: inline-block; top: -.25em;}
+	.column50 #arrow-hor {display: none;}
+	.column50 #arrow-vert {margin-bottom: -1em; top: .17em; display: inline-block;}	
+	.mainPage #arrow-vert {display: none;}
+}
+
+@media only screen and (min-width: 1024px) { 						/* biger screens */
+	.mainHeader #calculatorForm {margin-top: 4em;}
+}
+
+/* For printing */
+@media only print{
+
+}

@@ -2,3 +2,309 @@
 @{
     Layout = null;
 }
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--<![endif]-->
+<html lang="en">
+<head>
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<title>market FCEXCHANGE</title>
+	<meta name="description" content="">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+	<!-- JS just to get a timestamp
+	================================================== -->
+	<script type="text/javascript">
+		// just a timestamp when page just started loading
+		var timeDiff = 0, timeStamp = Math.floor(Date.now());
+	</script>
+
+	<!-- CSS
+	================================================== -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/currency-widget.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	
+	<!-- JS
+	================================================== -->	
+	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+	<script type="text/javascript" src="js/currency-widget.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+</head>
+
+<body>
+	<!-- do not change this -->
+	<nav class="mainBar slideRight"><!-- navigation bar -->	
+		<ul class="menu"><!-- site menu -->
+			<li><a href="about-us.html">About</a></li>
+			<li><a href="personal.html">Personal</a></li>
+			<li><a href="business.html">Business</a></li>
+			<li><a href="market.html">Markets</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li class="loginButtonInMenu"><a href="" class="button orangeButton noShadow">Login</a></li>
+			<li class="languages"><img src="img/ukflag.png"> <span class="name">English </span>
+				<ul>
+					<li><a href=""><img src="img/ukflag.png"> English</a></li>
+					<li><a href=""><img src="img/frenchflag.png"> Français</a></li>
+				</ul>
+			</li>
+		</ul>
+		<form class="searchForm" action="">
+			<input type="text" name="search" placeholder="" />
+			<span class="searchIt fa fa-search fa-flip-horizontal"> &nbsp; </span>
+		</form>		
+	</nav><!-- navigation bar -->
+	<a href="" class="logo"></a><!-- company logo -->
+	<!-- ./end of do not change this -->
+	
+	<div class="page onScreen"><!-- page content -->
+		<!-- mobile bar - background under the top menu, must be present, don't remove! -->
+		<div class="mobileBar"><div class="mobileMenuButton"><span></span><span></span><span></span></div></div>
+		<!-- ./end of mobile bar -->
+		
+		<header class="mainHeader market">
+			<section class="textBlockCentered80">
+				<h1>Market Monitor</h1>
+			</section>
+			<div class="layer buttons">
+				<section class="textBlockCentered80">
+					<a href="" class="button whiteButton">Majors</a>
+					<a href="" class="button whiteButton">EU</a>
+					<a href="" class="button whiteButton">Americas</a>
+					<a href="" class="button whiteButton">Asia</a>
+					<a href="" class="button whiteButton">Africa</a>
+					<a href="" class="button whiteButton">Middle East</a>
+				</section>
+			</div>
+			<section class="textBlockCentered80">
+				<section  class="column60">
+				<table>
+					<tr>
+						<th colspan="2">Currency</th>
+						<th>Rate</th>
+						<th>Change</th>
+						<th>Change %</th>
+					</tr>
+					<tr>
+						<td><img src="img/ukflag.png" width="100%"></td>
+						<td>EUR</td>
+						<td nowrap>2.010101</td>
+						<td nowrap class="green"><span class="fa fa-caret-up"></span> 2.010101 </td>
+						<td nowrap class="green"><span class="fa fa-caret-up"></span> 2.010101 </td>
+					</tr>
+					<tr>
+						<td><img src="img/frenchflag.png" width="100%"></td>
+						<td>USD</td>
+						<td nowrap>2.010101</td>
+						<td nowrap><span></span> 2.010101 </td>
+						<td nowrap><span></span> 2.010101 </td>
+					</tr>
+					<tr>
+						<td><img src="img/ukflag.png" width="100%"></td>
+						<td>AUD</td>
+						<td nowrap><span></span>2.010101</td>
+						<td nowrap><span></span>2.010101</td>
+						<td nowrap><span></span>2.010101</td>
+					</tr>
+					<tr>
+						<td><img src="img/frenchflag.png" width="100%"></td>
+						<td>EUR</td>
+						<td nowrap>2.010101</td>
+						<td nowrap class="red"><span class="fa fa-caret-up"></span> 2.010101 </td>
+						<td nowrap class="red"><span class="fa fa-caret-up"></span> 2.010101 </td>
+					</tr>
+					<tr>
+						<td><img src="img/ukflag.png" width="100%"></td>
+						<td>EUR</td>
+						<td nowrap>2.010101</td>
+						<td nowrap><span></span> 2.010101 </td>
+						<td nowrap><span></span> 2.010101 </td>
+					</tr>	
+					<tr>
+						<td colspan="5"><a href="">more currencies...</a></td>
+					</tr>
+				</table>
+				</section>
+				<section class="column40">
+					<!-- // currency widget ----------------------------------------------- -->
+					<form id="calculatorForm" action="">
+						<h2>Save upto £80.79<br />compared to your bank</h2>
+						<div class="amount button whiteButton GBP"><input type="tel" name="amount" id="amount" value="1000" /></div>
+						<select name="from" id="from"></select>
+						<div id="arrow-hor" class="fa fa-angle-right fa-3x"></div>
+						<div id="arrow-vert" class="fa fa-angle-down fa-3x"></div>
+						<div id="amountCounted" class="button whiteButton EUR">1000</div>
+						<select name="to" id="to"></select>
+						<div class="layer">
+							<a href="" class="button orangeButton">Make&nbsp;your&nbsp;transfer</a>
+						</div>
+					</form>
+					<!-- // ----------------------------------------------- end currency widget	-->
+				</section>
+			</section>
+		</header>
+		<a href="" class="buttonBetweenLayers orangeButton">Lock your rate</a>
+		<article class="layer chartLayer">
+			<section class="textBlockCentered80 centerText">
+				<select id="previous"></select><br />
+				<span id="fromC" class="button">GBP</span>
+				<span class="fa fa-angle-right fa-2x arrow"></span>
+				<span id="toC" class="button">EUR</span><br />
+				<a href="" class="">View more charts</a>
+			</section>
+			<section id="chart" class="textBlockCentered80">
+				<img src="img/chart.png" width="100%" />
+			</section>
+			<section id="chartValue" class="textBlockCentered80 centerText">
+				<span class="button orangeButton">
+					<span class="textBlack">1.3313 at</span> 17:58</span>
+				<a href="" class="button orangeButton">Lock your rate</a>
+			</section>
+		</article>	
+		<article class="layer dailyUpdate">
+			<section class="textBlockCentered80">
+				<section class="column60">
+					<h2>Greece talks breakdown again</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio...</p>
+					<p><a href="">read full report</a></p>
+				</section>
+				<section class="column40">
+					<h3>DAILY MARKET UPDATE</h3>
+					<h4>- 11th August 2015 09:00</h4>
+					<p>with Max Housson</p>
+				</section>
+			</section>
+		</article>
+		<article class="layer bottomBorderOrange">
+			<form action="" class="getInTouchForm textBlockCentered50 centerText">
+				<h3>Get reports delivered daily to your inbox.</h3>
+				<input type="email" name="email" id="email" placeholder="Email">
+				<input type="submit" id="submit" value="Stay updated">
+				<p class="centerText"><a href="">Previous updates...</a></p>
+			</form>
+		</article>
+		<article class="layer">
+			<section class="textBlockCentered60">
+				<section class="column50">
+					<h2>FC Exchange Online</h2>
+					<p>Our online dealing and international payments platform allows you to manage multiple foreign exchange deals.</p>
+					<ul>
+						<li>Competitive exchange rates</li>
+						<li>Reporting and management information</li>
+						<li>Payment tracking and automated beneficiary notification alerts</li>
+						<li>Beneficiary bank account verification</li>
+					</ul>
+					<p class="centerText"><a href="" class="button orangeButton">Open Account</a></p>
+				</section>
+				<section class="column50 centerText">
+					<img src="img/ipad.jpg" width="90%">
+				</section>
+			</section>
+		</article>
+		<article class="layer newspapers centerText">
+			<section class="column33">
+				<img src="img/theguardian.png" width="90%" />
+			</section>
+			<section class="column33">
+				<img src="img/thesundaytimes.png" width="90%" />
+			</section>
+			<section class="column33">
+				<img src="img/thetelegraph.png" width="90%" />
+			</section>
+		</article>		
+		<article class="layer">
+				<section class="column50 contacts">
+					<h2>Send us an email</h2>
+					<p>
+					<form class="getInTouchForm">
+						<table>
+							<tr><td><input type="text" name="title" id="title" placeholder="Title" /></td><td><input type="text" name="fullname" id="fullname" placeholder="Full name" /></td></tr>
+							<tr><td colspan="2"><input type="text" name="companyname" id="companyname" placeholder="Company name" /></td></tr>
+							<tr><td colspan="2"><input type="email" name="email" id="email" placeholder="E-mail" /></td></tr>
+							<tr><td colspan="2" class="centerText">
+								<textarea name="message" placeholder="Message"></textarea>
+							</td></tr>
+							<tr><td colspan="2" class="centerText">
+								<input type="submit" value="Send message">
+							</td></tr>
+						</table>
+					</form>					
+					</p>				</section>
+				<section class="column50 contacts">
+					<h2>Speak with us directly</h2>
+					<p>Call us on</p>
+					<h3>+44 020 7989 0000</h3>
+					<p><a href="" class="button orangeButton">Request callback</a></p>
+					<img src="img/consultant.jpg" class="consultant">
+				</section>
+		</article>
+		<footer class="mainFooter">
+			<section class="column25">
+				<h3>About FC Exchange</h3>
+				<ul>
+					<li><a href="">About Us</a></li>
+					<li><a href="">Our offices</a></li>
+					<li><a href="">Contact us</a></li>
+					<li><a href="">Customer Services</a></li>
+					<li><a href="">Press & Awards</a></li>
+					<li><a href="">Careers</a></li>
+					<li><a href="">Regulatroy Inforamtion</a></li>
+					<li><a href="">Security of your money</a></li>
+				</ul>
+			</section>
+			<section class="column25">
+				<h3>Personal Transfers</h3>
+				<p>Lorem Ipsum Copy</p>
+				<h3>Business Transfers</h3>
+				<p>Lorem Ipsum Copy</p>
+				<h3>FC Exchange online</h3>
+				<p>Lorem Ipsum Copy</p>
+			</section>
+			<section class="column25">
+				<h3>Resource Centre</h3>
+				<ul>
+					<li><a href="">Markte Watch</a></li>
+					<li><a href="">Currency converter</a></li>
+					<li><a href="">Live rates</a></li>
+					<li><a href="">Interactive currency charts</a></li>
+					<li><a href="">Rate alerts</a></li>
+					<li><a href="">Daily market report</a></li>
+					<li><a href="">Weekly market report</a></li>
+					<li><a href="">Glossary</a></li>
+					<li><a href="">Guides & Top Tips</a></li>
+					<li><a href="">FC Exchange App</a></li>
+				</ul>
+			</section>
+			<section class="column25">
+				<h3>Four'th column with a very important content.</h3>
+				<p>Even more Lorem Ipsum than ever</p>
+			</section>
+			<section class="layer">
+				<section class="textBlockCentered80">
+					<p>FC Exchange is a trading name of Foreign Currency Exchange Limited. Registered office: Salisbury House, Finsbury Circus, London, EC2M 5QQ. Registered Company No. 5452483.</p>
+					<p>FC Exchange is authorised by the Financial Conduct Authority (FCA) as an Authorised Electronic Money Institution (AEMI) under the Electronic Money Regulations 2011 for the issuing of electronic money (FRN: 900205).</p>
+					<p>As an AEMI FC Exchange is authorised to conduct payment services and complies with part 5 of the Payment Services Regulations 2009. Copyright © 2013 Foreign Currency Exchange. All Rights Reserved.</p>
+					<p class="centerText">Copyright © 2015 Foreign Currency Exchange. All Rights Reserved.</p>
+				</p>
+			</section>		
+		</footer>
+	</div><!-- ./page content -->
+</body>
+</html>

@@ -1,2 +1,604 @@
-/* Go crazy with your own styles here */
-/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
+@charset "utf-8";
+* {margin: 0px; padding: 0px; outline: 0px;} /* reset */
+
+/* ------------------------------------------------------------------------- */
+
+/* fonts */
+	@font-face{font-family:"AvenirNextLTW01-UltraLi"; src:url("../fonts/17c55b27-e9ab-43cd-b948-d49f97480d68.eot?#iefix"); src:url("../fonts/17c55b27-e9ab-43cd-b948-d49f97480d68.eot?#iefix") format("eot"),url("../fonts/2e3f5cb9-101f-46cf-a7b3-dfaa58261e03.woff2") format("woff2"),url("../fonts/fa19948e-5e38-4909-b31e-41acd170d6f2.woff") format("woff"),url("../fonts/6de0ce4d-9278-467b-b96f-c1f5f0a4c375.ttf") format("truetype"),url("../fonts/9fd4ea0c-b19a-4b21-9fdf-37045707dd78.svg#9fd4ea0c-b19a-4b21-9fdf-37045707dd78") format("svg");}
+	@font-face{font-family:"AvenirNextLTW01-Regular";src:url("../fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix"); src:url("../fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("eot"),url("../fonts/2cd55546-ec00-4af9-aeca-4a3cd186da53.woff2") format("woff2"),url("../fonts/1e9892c0-6927-4412-9874-1b82801ba47a.woff") format("woff"),url("../fonts/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf") format("truetype"),url("../fonts/52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f") format("svg");}
+	@font-face{font-family:"AvenirNextLTW01-Medium"; src:url("../fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix"); src:url("../fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix") format("eot"),url("../fonts/627fbb5a-3bae-4cd9-b617-2f923e29d55e.woff2") format("woff2"),url("../fonts/f26faddb-86cc-4477-a253-1e1287684336.woff") format("woff"),url("../fonts/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf") format("truetype"),url("../fonts/a89d6ad1-a04f-4a8f-b140-e55478dbea80.svg#a89d6ad1-a04f-4a8f-b140-e55478dbea80") format("svg");}
+	@font-face{font-family:"AvenirNextLTW01-UltraLt_721293"; src:url("../fonts/8ce12460-588e-4471-af8f-7d6d72435606.eot?#iefix"); src:url("../fonts/8ce12460-588e-4471-af8f-7d6d72435606.eot?#iefix") format("eot"),url("../fonts/4e85b83c-23d4-44fb-9b42-b7d35d7fdbdc.woff2") format("woff2"),url("../fonts/a09b5aae-fed9-40e0-9990-20eeaece9255.woff") format("woff"),url("../fonts/0fd9370c-b031-4de3-a183-228b47c8ad56.ttf") format("truetype"),url("../fonts/a30a07b5-d5bc-4f00-a949-20f62723d116.svg#a30a07b5-d5bc-4f00-a949-20f62723d116") format("svg");}
+	@font-face{font-family:"AvenirNextLTW01-Condens_721299"; src:url("../fonts/f737d53f-f6ed-4f15-8fe7-925fb68a8851.eot?#iefix"); src:url("../fonts/f737d53f-f6ed-4f15-8fe7-925fb68a8851.eot?#iefix") format("eot"),url("../fonts/7fb4cb78-601f-4bb2-995a-442252089573.woff2") format("woff2"),url("../fonts/19db35b6-b3e8-400b-ae62-a3d37cc9fa56.woff") format("woff"),url("../fonts/61860563-e9eb-40bd-844e-48e96af9d063.ttf") format("truetype"),url("../fonts/94f6e6be-004d-4b3a-8b0e-f07609dc1726.svg#94f6e6be-004d-4b3a-8b0e-f07609dc1726") format("svg");}
+/* ./end of fonts */
+
+/* ------------------------------------------------------------------------- */
+
+/* page common settings*/
+	html, body {position: relative; float: left; width: 100%; min-height: 100%;}
+	body {font-family: "AvenirNextLTW01-Regular", Halvetica, sans-serif; background: #fff; color: #5e5e5e; min-width: 320px;}
+	a {text-decoration: none; color: #f90;} a:hover {color: #d70;}
+	h1 {font-size: 3em;} h2 {font-size: 2.4em;} h3 {font-size: 1.9em;} h4 {font-size: 1.6em;}
+	h5 {font-size: 1.4em;} h6 {font-size: 1.1em;}
+	h1, h2, h3, h4, h5, h6 {font-family: "AvenirNextLTW01-Condens_721299", Halvetica, sans-serif; font-weight: 100; color: #f90;}
+	h3 {color: #5e5e5e;}
+	p {margin: 1em 0em 1em 0em; font-size: 1.2em;}
+	ul {margin: 2em 0em 3em 0em;}
+	li {list-style: inside;}
+	video {height: 100%;}
+/* ./end page common settings*/
+
+/* ------------------------------------------------------------------------- */
+
+	#bgvid {	position: fixed; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -100; transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transition: all 1s;}
+
+	.column20, .column25, .column30, .column33, .column40, .column50, .column60, .column70, .column75, .column80,
+	.layer, .divider, .textBlockCentered50, .testimonial, .keyfacts, .secondKeyfacts,
+	.searchForm, .searchForm input[type="text"], .searchForm input[type="tel"],
+	.mainHeader, .mainFooter,
+	.mainBar li, .mainBar li a,
+	.menu, .page, .keyfacts h2, .secondKeyfacts h2, #tabs li,
+	.team-link, .team-link, .mainPage abbr,
+	.textBlockCentered50, .textBlockCentered60, .textBlockCentered80, #TeamSearch 
+	{position: relative; float: left; width: 100%;}
+	
+	.column20, .column25, .column30, .column33, .column40, .column50, .column60, .column70, .column75, .column80,
+	.testimonial, .team
+	{padding-top: 1em; padding-bottom: 1em;}
+	
+	.absoluteFull {position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px;}
+	.behind {z-index: -10;}
+	.ahead {z-index: 10;}
+	.bottomBorderOrange {border-bottom: .1em solid #f90;}
+	
+	/* buttons */
+	.button, .buttonBetweenLayers {padding: 0px 1em 0px 1em !important; width: auto; text-align: center;	font-size: 1.2em; border: .1em solid; border-radius: 1em; vertical-align: middle; white-space: nowrap;}
+	.buttonBetweenLayers { position: relative; float: left; clear: both; left: 50%; background: #fff; transform: translate(-50%, 50%); z-index: 5;}
+	
+	.orangeButton, a.orangeButton {border-color: #f90; color: #f90 !important;}
+	.orangeButton:hover, a:hover.orangeButton {border-color: #c60; color: #c60 !important;}
+	.whiteButton, a.whiteButton {border-color: white; color: white;}
+	.whiteButton:hover, a:hover.whiteButton {border-color: #eee; color: #ddd !important;}
+	.greyButton, a.greyButton {border-color: #5e5e5e; color: #5e5e5e;}
+	.greyButton:hover, a:hover.greyButton {border-color: #6d6d6d; color: #6d6d6d;}
+		
+	/* circle buttons on movie previews */
+	.circle, .circleYellow {position: absolute; height: 105px; width: 105px; cursor: pointer; background: url(../img/circle.png) center center no-repeat; background-size: 100px 100px; left: 50%; margin-left: -50px; top: 50%; margin-top: -50px;}
+	.circle:before, .circleYellow:before{position: absolute; top: 30px; left: 42px; width: 38px; height: 50px; content: url(../img/triangle-right.png);}
+	.circleYellow {background: url(../img/yellow-circle.png) center center no-repeat;}
+	.circleYellow:before{content: url(../img/yellow-triangle.png);}
+	/* end of buttons */
+	
+	.backgroundGrey {background-color: #5e5e5e; color: #fff;}
+	.backgroundDarkGrey {background-color: #363636; color: #5e5e5e;}
+	.backgroundLightGrey {background-color: #f2f2f2; color: #5e5e5e;}
+	
+	.mainHeader.contact .brokers {vertical-align: bottom; padding-bottom: 0;}
+	
+	.caseStudy p:first-of-type {font-size: 2em;}
+	.caseStudy p {font-style: italic;}
+	.caseStudy p:last-of-type {font-style: normal;}
+	.caseStudy.partner p:first-of-type {font-size: 1em; margin-bottom: 5em;}
+	
+	.centerHorizontal {margin-left: none; left: 50%; transform: translateX(-50%); -webkit-transform:  translateX(-50%);}
+	.centerVertical {margin-top: none; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%);}
+	.centerScreen {margin-top: none; margin-left: none; left: 50%; top: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%);	}
+	.centerText {text-align: center !important;}
+	
+	.cover {position: absolute; top: 0; left: 0; bottom: 0; right: 0; background: rgba(0, 0, 0, 0.3);}
+	
+	.column20 h1, .column20 h2, .column20 h3, .column20 h4, .column20 h5, .column20 h6, .column20 p, .column20 ul,
+	.column25 h1, .column25 h2, .column25 h3, .column25 h4, .column25 h5, .column25 h6, .column25 p, .column25 ul,
+	.column30 h1, .column30 h2, .column30 h3, .column30 h4, .column30 h5, .column30 h6, .column30 p, .column30 ul,
+	.column33 h1, .column33 h2, .column33 h3, .column33 h4, .column33 h5, .column33 h6, .column33 p, .column33 ul,
+	.column40 h1, .column40 h2, .column40 h3, .column40 h4, .column40 h5, .column40 h6, .column40 p, .column40 ul,
+	.column50 h1, .column50 h2, .column50 h3, .column50 h4, .column50 h5, .column50 h6, .column50 p, .column50 ul,
+	.column60 h1, .column60 h2, .column60 h3, .column60 h4, .column60 h5, .column60 h6, .column60 p, .column60 ul,
+	.column70 h1, .column70 h2, .column70 h3, .column70 h4, .column70 h5, .column70 h6, .column70 p, .column70 ul,
+	.column80 h1, .column80 h2, .column80 h3, .column80 h4, .column80 h5, .column80 h6, .column80 p, .column80 ul
+	{
+		margin-left: 15%; margin-right: 15%;
+	}
+	
+	
+	.dotted {border-style: dotted !important;} /* makes line dotted */
+	
+	.floatedRight {display: block; position: relative; float: right; margin: 1.4em 0 .5em 1em;}
+	.floatedLeft {display: block; position: relative; float: left; margin: 1.4em 1em .5em 0;}
+	
+	.green {color: #99FF00;}
+	.red {color: #FF0000;}
+
+	.lineHorizontal, .lineHorizontalYellow {border-top: 3px white; height: 3px; border-right: 0px; border-bottom: 0px; border-left: 0px;}
+	.lineVertical, .lineVerticalYellow {border-left: 3px white; width: 3px; border-right: 0px; border-bottom: 0px; border-top: 0px;}
+	.lineHorizontalYellow {border-top-color: #f90;}
+	.lineVerticalYellow {border-left-color: #f90;}
+
+
+	.linesAnimation {background-color: #363636; color: #fff; font-size: 1.3em; overflow: hidden;}
+	.linesAnimation .column50:last-of-type {padding-top: 2em;}
+	.linesAnimation p {font-size: 1.2em;}
+	.linesAnimation a {color: #fff;}
+		
+	.noBorder {border-width: 0em;}
+	.noShadow {text-shadow: none; box-shadow: none;}
+	.noBackground {background-color: none; background-image: none; background: none;}
+
+	.overflowHidden {overflow: hidden;}
+	.overflowVisible {overflow: visible;}
+
+	.hide {display: none;}
+	.show {display: initial;}
+
+	.textOrange {color: #f90;}
+	.textBlack {color: #000;}
+	
+	.textRight {text-align: right !important;}
+	
+	/* line direction: to left or to right */
+	.toRight {position: absolute; top: 50%; left: 100%; width: 600%;}
+	.toLeft {position: absolute; top: 50%; right: 100%; width: 600%;}
+
+	/* ------------------------------------------------------------------------- */
+
+	.contacts {min-height: 15em !important; padding: 2em 0 2em 0;}
+	.consultant {position: absolute; right: 0px; bottom: 0px; z-index: -1;}
+
+	.howItWorks .column60 video {border-left: .3em solid #f90; margin-right: -.3em; margin-bottom: -.3em; width: 120%;}
+	.howItWorks .column40 p:last-of-type {margin: 3em 0 3em 0;}
+	.howItWorks.partner .column40 p:last-of-type {margin: 3em 15% 0 15%;}
+	.howItWorks.partner .column40 {background: url(../img/brokers.jpg) bottom center no-repeat; min-height: 29em; padding-bottom: 0;}
+	.howItWorks .column40 {padding-top: 3em;}
+	.howItWorks .column40 h2 {border-bottom: .1em solid #f90; margin-right: 0;}
+	.howItWorks .column60 .video, .howItWorks .column40, .howItWorks .column60 {min-height: 26em;}
+
+	.keyfacts, .secondKeyfacts {font-family: "AvenirNextLTW01-UltraLt_721293", Halvetica, sans-serif; font-weight: lighter;}
+	.keyfacts {background-color: #363636;}
+	.keyfacts h2 {color: #fff;}
+	.keyfacts h2, .secondKeyfacts h2 {font-family: "AvenirNextLTW01-UltraLt_721293", Halvetica, sans-serif; width: auto; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%);}
+	.keyfacts span.bigH2, .secondKeyfacts span.bigH2, .keyfacts span.transactions, .secondKeyfacts span.transactions, .keyfacts .growing {display: block;}
+
+	.layer {clear: both;}
+	.logo {position: fixed; left: 1em; top: .5em; cursor: pointer; display: inline-block; z-index: 1000001; box-sizing: border-box; background-size: cover !important; transition: all 1s; -webkit-transition: all 1s;}
+
+	.secondKeyfacts {background: url(../img/world2.png) center center no-repeat; color: #f90; min-height: 0em;}
+	.secondKeyfacts span.transactions {text-align: center;}
+
+	.mainFooter {background-color: #363636; border-top: .25em solid #f90; padding-top: 1em;}
+	.mainFooter h3 {font-size: 1.2em;}
+	.mainFooter p, .mainFooter a {font-size: .8em;}
+	.mainFooter li {list-style-type: none;}
+	.mainFooter a, .mainFooter p, .mainFooter h3 {color: #aeaeae;}
+	.mainFooter a:hover {color: #f90;}
+
+	.mainFooter .column25:last-of-type h3, .mainFooter .column25:last-of-type p, 
+	.mainFooter .column25:last-of-type li {margin-right: 1em;}
+
+	.mainHeader, .divider {-webkit-background-size: cover !important; background-size: cover !important; -webkit-background-position: center center !important; background-position: center center !important;}
+	.mainHeader h1,.mainHeader h2, .mainHeader p, .divider h1, .divider h2, .divider p {color: #fff; text-shadow: .1em .1em .5em #5e5e5e;}
+
+	.newspapers {background: rgba(250, 250, 250, 1); border-bottom: 3px solid lightgrey; border-top: 3px solid lightgrey; min-height: 0;}
+	.newspapers .column33 {min-height: 0;}
+
+	.ourProducts .column25 {outline: .1em solid #f90; margin-top: 1em; min-height: 28em;}
+	.ourProducts .column25 img {width: 30%;}
+	.ourProducts h3 {color: #f90; text-align: center;}
+
+	.page {min-height: 100%; transition: all .5s; -webkit-transition: all .5s; box-shadow: -2em -2px 2em #999; outline: 1px solid #aaa; min-height: 120%; display: table;}
+
+	.payments {background: #363636;}
+	.payments p {color: #fff;}
+	.payments .layer {margin: 1.5em 0 1.5em 0;}
+
+	.steps {padding-top: 2em; border-bottom: .1em solid #f90;}
+	.steps .layer p {margin-top: 2em; margin-bottom: 2em;}
+	
+	.testimonial {border-bottom: .1em solid #000; box-shadow: 0px .6em 1em #222; z-index: 5;}
+	
+	/* blocks of justified text, centered on the screen, taking not more that percent of width */
+	.textBlockCentered50, .textBlockCentered60, .textBlockCentered80 {padding-top: 3em; padding-bottom: 3em;}
+	.textBlockCentered50 p, .textBlockCentered60 p, .textBlockCentered80 p {text-align: left;}
+	.textBlockCentered50 a, .textBlockCentered60 a, .textBlockCentered80 a {color: #5e5e5e;}
+	/*.textBlockCentered50 a.button, .textBlockCentered60 a.button, .textBlockCentered80 a.button {color: #fff;}*/
+		
+	/* end of block of justified text */
+
+	.ui-menu, .ui-menu-item {background: rgba(0,0,0,0.2); color: #fff; font-family: inherit;}
+	.ui-menu, .ui-menu-item:first-of-type {border-radius: 1em 1em 0 0;}
+	.ui-menu, .ui-menu-item:last-of-type {border-radius: 0 0 1em 1em;}
+
+	.video {padding: 0; overflow: hidden;}
+	
+/* -------------------------------------------------------------------------
+				PAGE SPECIFIC OBJECTS AND DEFINITIONS
+   ------------------------------------------------------------------------- */
+
+/* market */
+	.mainHeader.market {background: #363636; padding-bottom: 0; margin-bottom: -1.6em;}
+	.mainHeader.market h1 {margin-top: 1em;}
+	.mainHeader.market .layer.buttons {border-bottom: .1em solid #f90; margin-bottom: 2em;}
+	.mainHeader.market .layer.buttons .button {position: relative; float: left; margin-right: .5em; transform: translateY(50%); -webkit-transform: translateY(50%); background-color: #363636;}
+	.mainHeader.market .layer.buttons .textBlockCentered80 {padding: 0;}
+	.mainHeader.market .textBlockCentered80:last-of-type {padding-top: 1em;}
+	.mainHeader.market .textBlockCentered80 {padding-bottom: 1em;}
+	.mainHeader.market .textBlockCentered80 .column40 #calculatorForm,
+	.mainHeader.market .textBlockCentered80 .column40 #calculatorForm h2
+	{margin-top: 0; color: #f90; text-shadow: none;}
+	.mainHeader.market .textBlockCentered80 .column40 #calculatorForm .button,
+	.mainHeader.market .textBlockCentered80 .column40 #calculatorForm #from-button,
+	.mainHeader.market .textBlockCentered80 .column40 #calculatorForm #to-button
+	{background: none;}
+	
+	.mainHeader.market table {width: 90%; color: #fff; border-collapse: separate; margin-right: 5%; border-spacing: .6em; font-size: 1.2em;}
+	.mainHeader.market a {color: #fff;}
+	.mainHeader.market a:hover {color: #f90;}
+	.mainHeader.market td, .mainHeader.market th {text-align: left; font-weight: normal; vertical-align: middle;}
+	.mainHeader.market th:nth-child(4), .mainHeader.market th:nth-child(3),
+	.mainHeader.market td:nth-child(4), .mainHeader.market td:nth-child(5) {text-align: right; width: 25%;}
+	.mainHeader.market td:nth-child(3) {width: 25%;}
+	.mainHeader.market td:nth-child(1) {width: 5%;}
+	
+	.dailyUpdate .column40, .dailyUpdate .column40 p {text-align: right;}
+	.dailyUpdate .textBlockCentered80 {background: url(../img/u332.png) right bottom no-repeat; background-size: 25%;}
+	.dailyUpdate {border-bottom: .1em solid #f90;}
+	
+	.divider.market.first {background: url(../img/u19.png);}
+	.divider.market.second {background: url(../img/about-us3.png); min-height: 40em;}
+	
+	.getInTouchForm.textBlockCentered50 #email {width: 50%;}
+	.getInTouchForm.textBlockCentered50 #submit {margin-left: 1em;}
+	
+	#previous-button {border: .1em solid #363636; border-radius: 1em; color: #363636; font-weight: normal; font: inherit; text-align: center;}
+	#previous-menu {border-radius: 1em;}
+	.arrow {margin: .2em; width: 1em; vertical-align: middle;}	
+/* ./end of market ------------------------------------------------------ */
+
+@media only screen and (min-width: 240px) {
+	.column20, .column25, .column30, .column33, .column40, 
+	.column50, .column60, .column70, .column75, .column80 
+	{width: 100%; display: block; position: relative; float: left;}
+	.consultant {width: 35%;}
+	
+	.form span.button {font-size: 1.5em;}
+	
+	.horizontalSteps {display: none;}
+	.layer .column20 p > img {width: 50%;}
+	.linesAnimation {height: auto;}
+	
+	/* login button displayed in menu of the page */
+	.loginButtonInMenu a.button {width: 70%; margin-left: 10%;}
+	.loginButtonInMenu a:hover.button {margin: .23em .23em .23em 10%;}
+
+	/* smaller logo */
+	.logo {width: 3.2em; height: 3.2em; background: url(../img/smalllogo2.png) no-repeat;}
+	
+	.mainHeader .column50 .layer .column50, .divider .column50 .layer .column50{width: 50%;}
+	.mainHeader .column50 .layer .column50 p, .divider .column50 .layer .column50 p {margin-left: 0%;}	
+	.mainHeader, .mainFooter {min-height: 30em;}
+	.mainHeader .column50, .divider .column50{width: 100%;}
+	.mainHeader h1, .mainHeader h2, .mainHeader p, .divider h1, .divider h2, .divider p {margin-top: 1em;}
+	
+	.dailyUpdate .textBlockCentered80 {background: rgba(0, 0, 0, 0) url("../img/u332.png") no-repeat scroll left bottom / 45% auto;}
+	.mainHeader.market .layer.buttons .button {position: initial; font-size: 2em; transform: none; margin: .5em;}
+	.mainHeader.market .layer.buttons .textBlockCentered80 {text-align: center;}
+	.mainHeader.market table {font-size: .95em;}
+	.mainHeader.market td:nth-child(1)  {width: 2em;} 
+	.mainHeader.market .column60  {width: 90%; margin-left: 5%;} 
+	.mainHeader.market .column40 {width: 90%; margin-left: 5%;}
+	
+	.mainHeader.partner .textBlockCentered80 .video {	height: 15em;}
+	
+	.getInTouchForm.textBlockCentered50 #email {width: 80%; margin: .2em;}
+	.getInTouchForm.textBlockCentered50 #submit {margin: 1em;}
+	
+	/* main navigation bar - contains menu */
+	.mainBar {position: fixed; top: 0em; right: -16.5em; width: 16.5em; z-index: 1000000; background: #363636; height: 100%;}
+	.mainBar.onScreen {right: 0em; transition: right .5s; -webkit-transition: right .5s;}
+	.mainBar.slideRight {right: -16.5em; transition: right .5s; -webkit-transition: right .5s;}
+	/* end of the main navigation bar - contains menu */
+	
+	/* menu */
+	.menu {display: block; width: auto; margin-top: .5em; width: 100%;}
+	.menu li {list-style-type: none; display: inline-block; width: 99%;}
+	.menu li a, .menu li.languages{width: 90%; display: block; padding: .6em 0em .6em 2em; color: #fff; text-shadow: none; margin: .3em; z-index: 20;}
+	.menu li a:hover, .menu li.languages:hover, .menu li.languages:active{color: #000; background: #bebebe; border: .1em solid #adadad; margin: .23em;}
+	.menu li > ul {display: none;}	
+	.menu li.languages > span.name {display: inline; float: left; margin-right: 1em;}
+	.menu li:hover > ul, .menu li:active > ul {display: block; position: absolute; top: 0em; right: 0em; background: #bebebe; 	width: 9em; border-radius: .5em;}
+	.menu li > ul > li  > a > img {vertical-align: middle; width: 2em;}
+	.menu li > img {width: 2em;}
+	.menu li:hover > ul > li {border-radius: .5em 0em 0em .5em; padding: 0em; overflow: hidden;}
+	.menu li:hover > ul > li a {padding: 0em; width: 8em;}
+	.menu li:hover > ul > li:hover, .menu li:hover > ul > li:hover a:hover {background-color: #aeaeae; padding: 0em;}
+	/* end of menu */	
+
+	/* background bar under menu, logo and mobile button */
+	.mobileBar {display: block; position: fixed; top: 0px; left: 0px; height: 4em; width: 100%; background: rgba(0, 0, 0, .3); z-index: 10;}
+	
+	/* button which switches on and off mobile menu, contains animation */
+	.mobileMenuButton {display: block; position: absolute; top: .2em; right: .2em; width: 1.6em; height: 1.6em; font-size: 1.7em; line-height: 1.6em; text-align: center; z-index: 1000; border: .1em solid #fff; color: #fff; border-radius: .2em; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; -o-transition: .5s ease-in-out; transition: .5s ease-in-out; cursor: pointer;	}
+	.mobileMenuButton:hover {color: #e6e6e6; border-color: #e6e6e6;}
+	.mobileMenuButton span{display: block; position: absolute; height: .14em; width: 70%; background: #fff; border-radius: .3em; opacity: 1; left: .25em; border: 0; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: .25s ease-in-out; -moz-transition: .25s ease-in-out; -o-transition: .25s ease-in-out; transition: .25s ease-in-out;}
+	.mobileMenuButton span:nth-child(1) {top: .4em;}
+	.mobileMenuButton span:nth-child(2) {top: .73em;}
+	.mobileMenuButton span:nth-child(3) {top: 1.05em;}
+	.mobileMenuButton.open span:nth-child(1) {top: .8em; -webkit-transform: rotate(135deg); -moz-transform: rotate(135deg); -o-transform: rotate(135deg); transform: rotate(135deg);}
+	.mobileMenuButton.open span:nth-child(2) {opacity: 0; left: -60px;}
+	.mobileMenuButton.open span:nth-child(3) {top: .8em; -webkit-transform: rotate(-135deg); -moz-transform: rotate(-135deg); -o-transform: rotate(-135deg); transform: rotate(-135deg);}
+	/* end of mobile menu button with animation */
+
+	.mainHeader img.column40 {margin-top: 3em;}
+	
+	/* menu that displays company's offices with google map */
+	#officeMenu {margin-top:0;}
+	#officeMenu li, #officeMenu li.unclicked {clear: left; border-left: .2em dotted grey; margin-left: 0; border-bottom: none;}
+	#officeMenu li:hover, #officeMenu li.clicked {border-left: .2em solid #f90; padding-left: 1em; border-bottom: none;}
+	#officeMenu li section {width: 100%; height: 18em; padding-left: 0;}
+	#map {height: 25em;}
+	#offices {height: 34em;}
+
+	.page {z-index: 10;}
+	.page.onScreen {left: 0em; transition: left .5s; -webkit-transition: left .5s;} /* show on screen */
+	.page.slideLeft {left: -16.5em; transition: left .5s; -webkit-transition:  left .5s;} /* slide page to left */
+	
+	/* search box on a top/side in a main menu */
+	.searchForm input[type="text"] {background: #bebebe; width: 96%; padding: .6em 0em .6em 0em; color: #000; margin: .3em; border: .1em solid #adadad;}
+	.searchIt {position: absolute; top: .3em; left: 82%; font-size: 1.6em; cursor: pointer;}
+	
+	.textBlockCentered50 p, .textBlockCentered60 p, .textBlockCentered80 p,
+	.textBlockCentered50 h1, .textBlockCentered60 h1, .textBlockCentered80 h1,
+	.textBlockCentered50 h2, .textBlockCentered60 h2, .textBlockCentered80 h2,
+	.textBlockCentered50 h3, .textBlockCentered60 h3, .textBlockCentered80 h3,
+	.textBlockCentered50 h4, .textBlockCentered60 h4, .textBlockCentered80 h4,
+	.textBlockCentered50 h5, .textBlockCentered60 h5, .textBlockCentered80 h5,
+	.textBlockCentered50 h6, .textBlockCentered60 h6, .textBlockCentered80 h6,
+	.textBlockCentered50 ul, .textBlockCentered60 ul, .textBlockCentered80 ul
+	{margin-left: 5%; margin-right: 5%;}
+	
+	
+	.textBlockCentered50 > *:first-of-type > h1, .textBlockCentered60 > *:first-of-type > h1, .textBlockCentered80 > *:first-of-type > h1,
+	.textBlockCentered50 > *:first-of-type > h2, .textBlockCentered60 > *:first-of-type > h2, .textBlockCentered80 > *:first-of-type > h2,
+	.textBlockCentered50 > *:first-of-type > h3, .textBlockCentered60 > *:first-of-type > h3, .textBlockCentered80 > *:first-of-type > h3,
+	.textBlockCentered50 > *:first-of-type > h4, .textBlockCentered60 > *:first-of-type > h4, .textBlockCentered80 > *:first-of-type > h4,
+	.textBlockCentered50 > *:first-of-type > h5, .textBlockCentered60 > *:first-of-type > h5, .textBlockCentered80 > *:first-of-type > h5,
+	.textBlockCentered50 > *:first-of-type > h6, .textBlockCentered60 > *:first-of-type > h6, .textBlockCentered80 > *:first-of-type > h6,
+	.textBlockCentered50 > *:first-of-type > p, .textBlockCentered60 > *:first-of-type > p, .textBlockCentered80 > *:first-of-type > p,
+	.textBlockCentered50 > *:first-of-type > ul, .textBlockCentered60 > *:first-of-type > ul, .textBlockCentered80 > *:first-of-type > ul,
+	
+	.textBlockCentered50 > *:last-of-type > h1, .textBlockCentered60 > *:last-of-type > h1, .textBlockCentered80 > *:last-of-type > h1,
+	.textBlockCentered50 > *:last-of-type > h2, .textBlockCentered60 > *:last-of-type > h2, .textBlockCentered80 > *:last-of-type > h2,
+	.textBlockCentered50 > *:last-of-type > h3, .textBlockCentered60 > *:last-of-type > h3, .textBlockCentered80 > *:last-of-type > h3,
+	.textBlockCentered50 > *:last-of-type > h4, .textBlockCentered60 > *:last-of-type > h4, .textBlockCentered80 > *:last-of-type > h4,
+	.textBlockCentered50 > *:last-of-type > h5, .textBlockCentered60 > *:last-of-type > h5, .textBlockCentered80 > *:last-of-type > h5,
+	.textBlockCentered50 > *:last-of-type > h6, .textBlockCentered60 > *:last-of-type > h6, .textBlockCentered80 > *:last-of-type > h6,
+	.textBlockCentered50 > *:last-of-type > p, .textBlockCentered60 > *:last-of-type > p, .textBlockCentered80 > *:last-of-type > p,
+	.textBlockCentered50 > *:last-of-type > ul, .textBlockCentered60 > *:last-of-type > ul, .textBlockCentered80 > *:last-of-type > ul
+	{margin-left: 15%; margin-right: 15%;}
+	
+/*	.textBlockCentered50, .mainFooter .textBlockCentered80 {width: 80%; margin-left: 10%;}
+	.textBlockCentered60, .textBlockCentered80 {width: 100%; margin-left: 0%;}
+*/	
+	#tabs {margin-top: 30px;}
+	#tabs li {width: 100%;}
+	.tab {padding: 10px 10px 10px 30px;}	
+}
+
+@media only screen and (min-width: 480px) {
+	.mainHeader.market table  {font-size: 1.4em;} 
+	.mainHeader.market .column60  {width: 80%; margin-left: 10%;} 
+	.mainHeader.market .column40 {width: 60%; margin-left: 20%;}
+	.mainHeader.market .layer.buttons .button {position: initial; font-size: 1.5em; transform: none; margin: .5em;}	
+	/*.mainHeader .column50, .divider .column50 {width: 50%;}*/
+}
+
+@media only screen and (min-width: 768px) {
+	.anotherVerticalLine {position: absolute; top: 0; left: 50%; width: .1em; height: 90.5%; border-left: .1em solid #f90; display: block;}
+	.b4transactions .column60 h2 {margin-left: 10%; font-size: 4em;}
+		
+	/* layout columns */
+	.column20 {width: 20%;}
+	.column25 {width: 25%;} 
+	.column30 {width: 30%;}
+	.column33 {width: 33.3%;}
+	.column40 {width: 40%;}
+	.column50 {width: 50%;}
+	.column60 {width: 60%;}
+	.column70 {width: 70%;}
+	.column75 {width: 75%;}
+	.column80 {width: 80%;}
+	.column20, .column25, .column30, .column33, .column40, 
+	.column50, .column60, .column70, .column75, .column80 {
+		display: table-cell; position: initial; 
+		vertical-align: top;
+	}
+	
+	.keyfacts .column50 {float: left;}
+	.secondKeyfacts .column33 {float: left;}
+	
+	.consultant {width: 25%;}
+	
+	/*.divider .textBlockCentered80 .column50 .layer .column50 {width: 50%;}*/
+	.mainHeader img.column40 {margin-top: 10em; padding-bottom: 0;}
+	
+	.dailyUpdate .textBlockCentered80 {background: rgba(0, 0, 0, 0) url("../img/u332.png") no-repeat scroll right bottom / 25% auto;}
+
+	.mainHeader.market table  {font-size: 1.4em;} 
+	.mainHeader.market .column60  {width: 60%; margin: 0;} 
+	.mainHeader.market .column40 {width: 40%; margin: 0;}
+	.mainHeader.market .layer.buttons .button {position: relative; float: left; font-size: 1.3em;	transform: translateY(80%); -webkit-transform: translateY(80%);}	
+	
+	.getInTouchForm.textBlockCentered50 #email {width: 49%;}
+	.getInTouchForm.textBlockCentered50 #submit {margin-left: 1em;}
+	
+	.layer .column20 p > img {width: 80%;}
+	
+	.textBlockCentered50 {width: 50%; margin-left: 25%;}
+	.textBlockCentered60 {width: 60%; margin-left: 20%;}
+	.textBlockCentered80 {width: 80%; margin-left: 10%;}
+	
+	.textBlockCentered50 p, .textBlockCentered60 p, .textBlockCentered80 p,
+	.textBlockCentered50 h1, .textBlockCentered60 h1, .textBlockCentered80 h1,
+	.textBlockCentered50 h2, .textBlockCentered60 h2, .textBlockCentered80 h2,
+	.textBlockCentered50 h3, .textBlockCentered60 h3, .textBlockCentered80 h3,
+	.textBlockCentered50 h4, .textBlockCentered60 h4, .textBlockCentered80 h4,
+	.textBlockCentered50 h5, .textBlockCentered60 h5, .textBlockCentered80 h5,
+	.textBlockCentered50 h6, .textBlockCentered60 h6, .textBlockCentered80 h6,
+	.textBlockCentered50 ul, .textBlockCentered60 ul, .textBlockCentered80 ul
+	{margin-left: 0; margin-right: 0;}
+	
+	.textBlockCentered50 > *:first-of-type > h1, .textBlockCentered60 > *:first-of-type > h1, .textBlockCentered80 > *:first-of-type > h1,
+	.textBlockCentered50 > *:first-of-type > h2, .textBlockCentered60 > *:first-of-type > h2, .textBlockCentered80 > *:first-of-type > h2,
+	.textBlockCentered50 > *:first-of-type > h3, .textBlockCentered60 > *:first-of-type > h3, .textBlockCentered80 > *:first-of-type > h3,
+	.textBlockCentered50 > *:first-of-type > h4, .textBlockCentered60 > *:first-of-type > h4, .textBlockCentered80 > *:first-of-type > h4,
+	.textBlockCentered50 > *:first-of-type > h5, .textBlockCentered60 > *:first-of-type > h5, .textBlockCentered80 > *:first-of-type > h5,
+	.textBlockCentered50 > *:first-of-type > h6, .textBlockCentered60 > *:first-of-type > h6, .textBlockCentered80 > *:first-of-type > h6,
+	.textBlockCentered50 > *:first-of-type > p, .textBlockCentered60 > *:first-of-type > p, .textBlockCentered80 > *:first-of-type > p,
+	.textBlockCentered50 > *:first-of-type > ul, .textBlockCentered60 > *:first-of-type > ul, .textBlockCentered80 > *:first-of-type > ul
+	{margin-left: 5%; margin-right: 15%;}
+	
+	.textBlockCentered50 > * > h1, .textBlockCentered60 > * > h1, .textBlockCentered80 > * > h1,
+	.textBlockCentered50 > * > h2, .textBlockCentered60 > * > h2, .textBlockCentered80 > * > h2,
+	.textBlockCentered50 > * > h3, .textBlockCentered60 > * > h3, .textBlockCentered80 > * > h3,
+	.textBlockCentered50 > * > h4, .textBlockCentered60 > * > h4, .textBlockCentered80 > * > h4,
+	.textBlockCentered50 > * > h5, .textBlockCentered60 > * > h5, .textBlockCentered80 > * > h5,
+	.textBlockCentered50 > * > h6, .textBlockCentered60 > * > h6, .textBlockCentered80 > * > h6,
+	.textBlockCentered50 > * > p, .textBlockCentered60 > * > p, .textBlockCentered80 > * > p,
+	.textBlockCentered50 > * > ul, .textBlockCentered60 > * > ul, .textBlockCentered80 > * > ul
+	{margin-left: 15%; margin-right: 15%;}
+
+	.textBlockCentered50 > *:last-of-type > h1, .textBlockCentered60 > *:last-of-type > h1, .textBlockCentered80 > *:last-of-type > h1,
+	.textBlockCentered50 > *:last-of-type > h2, .textBlockCentered60 > *:last-of-type > h2, .textBlockCentered80 > *:last-of-type > h2,
+	.textBlockCentered50 > *:last-of-type > h3, .textBlockCentered60 > *:last-of-type > h3, .textBlockCentered80 > *:last-of-type > h3,
+	.textBlockCentered50 > *:last-of-type > h4, .textBlockCentered60 > *:last-of-type > h4, .textBlockCentered80 > *:last-of-type > h4,
+	.textBlockCentered50 > *:last-of-type > h5, .textBlockCentered60 > *:last-of-type > h5, .textBlockCentered80 > *:last-of-type > h5,
+	.textBlockCentered50 > *:last-of-type > h6, .textBlockCentered60 > *:last-of-type > h6, .textBlockCentered80 > *:last-of-type > h6,
+	.textBlockCentered50 > *:last-of-type > p, .textBlockCentered60 > *:last-of-type > p, .textBlockCentered80 > *:last-of-type > p,
+	.textBlockCentered50 > *:last-of-type > ul, .textBlockCentered60 > *:last-of-type > ul, .textBlockCentered80 > *:last-of-type > ul
+	{margin-left: 15%; margin-right: 5%;}
+
+	
+	.testimonial .video {min-height: 10em;}
+	
+	#map {height: 34em;}
+	#offices {height: 34em;}	
+	
+	#tabs li {width: 16.6%;}
+	.tab, .tab-not-selected {height: 5em; padding: 0px; padding-top: 1em; text-align: center; font-size: 1.4em; margin: 1px 0px 1px 0px;}
+	.tab:hover h3, .tab-selected h3 {border-top: 1px solid #f90; border-bottom: 1px solid #f90; margin: 0px; background: #fefefe;}
+	#tab-content {min-height: 500px; border-bottom: 1px solid #f90;}	
+}
+
+@media only screen and (min-width: 1024px) {
+	body {font-size: .9em;}
+	.b4transactions .column60 h2 {font-size: 4.5em;}
+	
+	/* default columns height (might be removed when page is ready) */
+	.column20, .column25, .column30, .column33, .column40, .column50, .column60, .column70, .column75, .column80, .mainHeader, .mainFooter {min-height: 12em;}
+
+	.getInTouchForm table {width: 100%;}
+	.getInTouchForm #title {width: 2em;}
+
+	.horizontalSteps {display: block; top: 9.3em;}
+
+	.linesAnimation {height: 20em;}
+	
+	/* login button in a menu */
+	.loginButtonInMenu {padding-top: .3em;}
+	.loginButtonInMenu a.button {width: auto; margin-left: .2em;}
+	.loginButtonInMenu a:hover.button {margin: .2em; border: .1em solid;}
+	
+	.logo {width: 12em; height: 3em; background: url(../img/logo3.png) no-repeat;}
+	.secondKeyfacts, .keyfacts {font-size: .8em;}
+	.keyfacts .column50 {width: 50%;}
+	.keyfacts span.transactions, .keyfacts span.bigH2 {border-left: .01em solid #f90;}
+	.keyfacts h2, .secondKeyfacts h2 {margin: 1em 0em 0em 1em;}
+	.keyfacts span.bigH2, .secondKeyfacts span.bigH2 {font-size: 5em; margin: -0.2em 0em -.4em .4em; text-align: left;}
+	.keyfacts span.over {font-size: 1.2em;}
+	.keyfacts span.transactions, .secondKeyfacts span.transactions {margin: 0em 0em 1em 2em; padding-left: .3em;}
+	.keyfacts .growing {font-size: 1.5em; margin: -1.5em 0em 1em 3em;}
+
+	
+	/* main navigation bar - contains menu */
+	.mainBar {position: fixed; top: 0em; left: 0px; right: 0px; height: 4em; z-index: 15; background: none; width: auto;	}
+	.mainBar.onScreen {right: 0px; transition: none; -webkit-transition: none;}
+	.mainBar.slideRight {right: 0em; transition: none; -webkit-transition: none;}
+	/* end of the main navigation bar - contains menu */
+
+	/* main header definitions*/
+	.mainHeader .column50, .divider .column50 { width: 50%;}
+	.mainHeader h1,.mainHeader h2, .mainHeader p, .divider h1, .divider h2, .divider p {	margin-top: 3em;}
+	/*.mainHeader .column50:first-of-type h1,.mainHeader .column50:first-of-type h2, .mainHeader .column50:first-of-type p,
+	.divider .column50:first-of-type h1, .divider .column50:first-of-type h2, .divider .column50:first-of-type p {margin-left: 0%;}
+		*/
+	.mainHeader .column50:last-of-type h1,.mainHeader .column50:last-of-type h2, .mainHeader .column50:last-of-type p,
+	.divider .column50:last-of-type h1, .divider .column50:last-of-type h2, .divider .column50:last-of-type p {margin-left: 0em; margin-right: 30%;}
+
+	.mainHeader p, .divider p {margin-top: 1em; font-family: "AvenirNextLTW01-Regular"; }
+	.mainHeader p:last-of-type, .divider p:last-of-type {margin-bottom: 5em;}
+	.mainHeader .column50 .layer, .divider .column50 .layer {margin-left: 0%; width: 100%;}
+	.mainHeader .column50:last-of-type .layer, .divider .column50:last-of-type .layer {margin-left: 0%; margin-right: 30%; width: 70%;}
+	.mainHeader .column50 .layer p, .divider .column50 .layer p {margin-left: 0em;}
+		
+	.mainHeader.market table {font-size: 1em;}
+	.mainHeader.market .column60  {width: 50%; margin-right: 10%;} 
+	.mainHeader.market .column40 {width: 40%; margin: 0;}
+	.mainHeader.market .layer.buttons .button {position: relative; float: left; font-size: 1.1em; transform: translateY(80%); -webkit-transform: translateY(80%);	}
+	/* end of main header definitions*/
+	
+	/* menu */
+	.menu {width: auto; float: right; margin-top: .5em;}
+	.menu li {width: auto;}
+	.menu li a{width: auto; padding: .4em; margin: .2em; color: #fff;}
+	.menu li a:hover{color: #f90; background: none; border: 0; padding: .4em; margin: .2em;}
+	.menu li.languages {padding: .3em .3em .7em .3em; margin: .3em 0em 0em 0em; cursor: pointer; width: auto;}
+	.menu li.languages:hover, .menu li.languages:active {background-color: #5e5e5e; border-radius: .5em 0em 0em .5em; margin: .3em 0em 0em 0em;}
+	.menu li.languages > span.name {display: none;}
+	.menu li:hover > ul, .menu li:active > ul {background: #5e5e5e;}
+	.menu li:hover > ul > li:hover, .menu li:hover > ul > li:hover a:hover {background-color: #6f6f6f; color: #fff;}
+	/* end of menu */
+
+	.mobileMenuButton {display: none;}
+	
+	#officeMenu {top: 23em; margin-right: 0; margin-left: 5%; margin-bottom: 0;}
+	#officeMenu li {padding: 1em;}
+	#officeMenu li section {top: -20em; padding-left: 2em; width: 97%; z-index: 0; height: 19em;}
+	#officeMenu li, #officeMenu li.unclicked {width: auto; clear: none; margin-left: 1em; border: none; padding: 0 0 1em 0;}
+	#officeMenu li:hover, #officeMenu li.clicked {border: none; border-bottom: .2em solid #f90;  padding: 0 0 1em 0;}
+	#map, #offices {height: 27em;}
+	
+	.page {z-index: 10;}
+	.page.onScreen {left: 0em; transition: none; -webkit-transition: none;} /* turn off former css */
+	.page.slideLeft {left: 0em; transition: none; -webkit-transition: none;} /* turn off former css */
+	
+	.textBlockCentered50 {width: 50%; margin-left: 25%;}
+	.textBlockCentered60 {width: 60%; margin-left: 20%;}
+	.textBlockCentered80 {width: 80%; margin-left: 10%;}	
+	
+	/* main search form */
+	.searchForm {display: inline-block; height:1.8em; min-width: 1.8em; width: auto; float: right; margin-top: 1em;}
+	.searchForm .searchIt{color: #fff; height: 1em; width: 1em; cursor: pointer; display: block; left: auto; right: .85em; margin-left: -26px; margin-top: 0em; font-size: 1em;}
+	.searchForm input[type="text"], .searchForm input[type="tel"], .ui-autocomplete-input {padding: 0em .5em 0em .5em; width: .7em; color: #fff; background: transparent; line-height: 1.4em; font-size: 1.1em; margin-top: 0px; font-family: inherit; border: .09em solid #fff; border-radius: 1em;}
+	.searchForm input[type="text"]:focus, .searchForm input[type="tel"]:focus {width: 13em; transition: all 1s; -webkit-transition: all 1s;}
+	/* end of main search form */
+}
+
+@media only screen and (min-width: 1280px) {
+	body {font-size: 1em;}
+	.horizontalSteps {top: 10.5em;}
+}
+
+@media only screen and (min-width: 1920px) {
+	body {font-size: 1.55em;}
+}
+
+@media only screen and (min-width: 2560px) {
+	body {font-size: 2.1em;}
+}
+
+@media only screen and (min-width: 5120px) {
+	body {font-size: 4.2em;}
+}
+
+/* For printing */
+@media only print{
+
+}
