@@ -47,6 +47,8 @@
 	<script type="text/javascript" src="js/currency-widget.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/bower_components/jsgrid/dist/jsgrid.min.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -93,55 +95,8 @@
 					<a href="" class="button whiteButton">Middle East</a>
 				</section>
 			</div>
-			<section class="textBlockCentered80">
-				<section  class="column60">
-				<table>
-					<tr>
-						<th colspan="2">Currency</th>
-						<th>Rate</th>
-						<th>Change</th>
-						<th>Change %</th>
-					</tr>
-					<tr>
-						<td><img src="img/ukflag.png" width="100%"></td>
-						<td>EUR</td>
-						<td nowrap>2.010101</td>
-						<td nowrap class="green"><span class="fa fa-caret-up"></span> 2.010101 </td>
-						<td nowrap class="green"><span class="fa fa-caret-up"></span> 2.010101 </td>
-					</tr>
-					<tr>
-						<td><img src="img/frenchflag.png" width="100%"></td>
-						<td>USD</td>
-						<td nowrap>2.010101</td>
-						<td nowrap><span></span> 2.010101 </td>
-						<td nowrap><span></span> 2.010101 </td>
-					</tr>
-					<tr>
-						<td><img src="img/ukflag.png" width="100%"></td>
-						<td>AUD</td>
-						<td nowrap><span></span>2.010101</td>
-						<td nowrap><span></span>2.010101</td>
-						<td nowrap><span></span>2.010101</td>
-					</tr>
-					<tr>
-						<td><img src="img/frenchflag.png" width="100%"></td>
-						<td>EUR</td>
-						<td nowrap>2.010101</td>
-						<td nowrap class="red"><span class="fa fa-caret-up"></span> 2.010101 </td>
-						<td nowrap class="red"><span class="fa fa-caret-up"></span> 2.010101 </td>
-					</tr>
-					<tr>
-						<td><img src="img/ukflag.png" width="100%"></td>
-						<td>EUR</td>
-						<td nowrap>2.010101</td>
-						<td nowrap><span></span> 2.010101 </td>
-						<td nowrap><span></span> 2.010101 </td>
-					</tr>	
-					<tr>
-						<td colspan="5"><a href="">more currencies...</a></td>
-					</tr>
-				</table>
-				</section>
+            <section class="textBlockCentered80">
+                <section id="jsGrid" class="column60"></section>
 				<section class="column40">
 					<!-- // currency widget ----------------------------------------------- -->
 					<form id="calculatorForm" action="">
