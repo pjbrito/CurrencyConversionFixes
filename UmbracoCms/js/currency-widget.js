@@ -193,6 +193,7 @@ function refreshCurrencyGrid(geoLocation) {
                 { name: "Change %", type: "text" }
             ]
         });
+        convertAndSetAmountCounted();
     }
 }
 
@@ -577,6 +578,49 @@ function IsJsonString(str) {
     return true;
 }
 
+function convertAndSetAmountCounted() {
+    var amount = $('#amount').val();
+    if ($('#amount').is('div')) {
+        amount = $('#amount').find('input').val();
+    }
+    var amountCode = filterCurrencyCodes($('#amount').attr('class'));
+    var amountCountedCode = filterCurrencyCodes($('#amountCounted').attr('class'));
+
+    var rates = getRatesNestedArray(null, getStoredLiveRates("LiveRates"));
+    var orig = _.filter(rates, function (r) {
+        return r[0] === amountCode;
+    })[0];
+    var dest = _.filter(rates, function (r) {
+        return r[0] === amountCountedCode;
+    })[0];
+
+    var conversionValue = (Number(amount) * Number(dest[1]) / Number(orig[1])).toFixed(2);
+
+    if ($("#amountCounted").is('div')) {
+        $("#amountCounted").text(conversionValue);
+    }
+
+    return conversionValue;
+}
+
+function filterCurrencyCodes(classes) {
+    // clean other class attributes
+    classes = classes.replace('amount', '');
+    classes = classes.replace('button', '');
+    classes = classes.replace('whiteButton', '');
+    var classesArray = classes.split(/\s+/);
+
+    var code = _.filter(classesArray, function (_class) {
+        return _class.length === 3
+    });
+
+    if (code.length === 1) {
+        return code[0];
+    } else {
+        return '';
+    }
+}
+
 function currencyWidget(){	// currency widget -----------------------------------------------
 	if (!CurrencyList){$.getJSON(CurrenciesURL, function(json){CurrencyList = json;});}
 	$("#from, #to").selectmenu({create: function(event, ui){
@@ -666,49 +710,6 @@ function currencyWidget(){	// currency widget ----------------------------------
 		newText = textInt + tSep + newText;
 		$(this).val(newText.trim() + rest);
 	});
-
-	function convertAndSetAmountCounted() {
-	    var amount = $('#amount').val();
-	    if ($('#amount').is('div')) {
-	        amount = $('#amount').find('input').val();
-	    }
-	    var amountCode = filterCurrencyCodes($('#amount').attr('class'));
-	    var amountCountedCode = filterCurrencyCodes($('#amountCounted').attr('class'));
-
-	    var rates = getRatesNestedArray(null, getStoredLiveRates("LiveRates"));
-	    var orig = _.filter(rates, function (r) {
-	        return r[0] === amountCode;
-	    })[0];
-	    var dest = _.filter(rates, function (r) {
-	        return r[0] === amountCountedCode;
-	    })[0];
-            
-	    var conversionValue = (Number(amount) * Number(dest[1]) / Number(orig[1])).toFixed(2);
-
-	    if ($("#amountCounted").is('div')) {
-	        $("#amountCounted").text(conversionValue);
-	    }
-
-	    return conversionValue;
-	}
-
-	function filterCurrencyCodes(classes) {
-        // clean other class attributes
-	    classes = classes.replace('amount', '');
-	    classes = classes.replace('button', '');
-	    classes = classes.replace('whiteButton', '');
-	    var classesArray = classes.split(/\s+/);
-
-        var code = _.filter(classesArray, function (_class) {
-	        return _class.length === 3
-        });
-
-        if (code.length === 1) {
-            return code[0];
-        } else {
-            return '';
-        }
-	}
 	
 	$("#arrow-hor, #arrow-vert").click(function(){
 		var f = $("#from").val(), t = $("#to").val();
