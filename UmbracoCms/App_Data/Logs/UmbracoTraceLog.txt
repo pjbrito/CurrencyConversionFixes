@@ -1,1 +1,55 @@
 ﻿2015-09-21 03:17:05,434 [17] INFO  umbraco.BusinessLogic.Log - [P1912/T18/D3] Log scrubbed.  Removed all items older than 2015-07-23 03:17:05
+2015-09-21 06:04:28,465 [17] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T18/D3] [ScheduledTasks] Terminating
+2015-09-21 06:04:28,465 [17] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T18/D3] [ScheduledTasks] Waiting for tasks to complete
+2015-09-21 06:04:28,466 [17] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T18/D3] [ScheduledPublishing] Terminating
+2015-09-21 06:04:28,466 [17] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T18/D3] [ScheduledPublishing] Waiting for tasks to complete
+2015-09-21 06:04:28,466 [17] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T18/D3] [KeepAlive] Terminating
+2015-09-21 06:04:28,466 [17] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T18/D3] [KeepAlive] Waiting for tasks to complete
+2015-09-21 06:04:28,466 [17] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T18/D3] [LogScrubber] Terminating
+2015-09-21 06:04:28,466 [17] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T18/D3] [LogScrubber] Waiting for tasks to complete
+2015-09-21 06:04:28,467 [17] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T18/D3] [ScheduledTasks] Tasks completed, terminated
+2015-09-21 06:04:28,468 [17] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T18/D3] [LogScrubber] Tasks completed, terminated
+2015-09-21 06:04:28,468 [17] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T18/D3] [KeepAlive] Tasks completed, terminated
+2015-09-21 06:04:28,468 [17] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T18/D3] [ScheduledPublishing] Tasks completed, terminated
+2015-09-21 06:05:00,031 [17] INFO  Umbraco.Core.UmbracoApplicationBase - [P1912/T18/D3] Application shutdown. Reason: ConfigurationChange
+2015-09-21 06:16:27,372 [48] INFO  Umbraco.Core.CoreBootManager - [P1912/T73/D4] Umbraco 7.2.8 application starting on ANNA
+2015-09-21 06:16:27,393 [48] INFO  Umbraco.Core.PluginManager - [P1912/T73/D4] Determining hash of code files on disk
+2015-09-21 06:16:27,399 [48] INFO  Umbraco.Core.PluginManager - [P1912/T73/D4] Hash determined (took 5ms)
+2015-09-21 06:16:27,404 [48] INFO  Umbraco.Core.PluginManager - [P1912/T73/D4] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2015-09-21 06:16:27,571 [48] INFO  Umbraco.Core.PluginManager - [P1912/T73/D4] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 37 (took 166ms)
+2015-09-21 06:16:27,614 [48] INFO  Umbraco.Core.PluginManager - [P1912/T73/D4] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2015-09-21 06:16:27,617 [48] INFO  Umbraco.Core.PluginManager - [P1912/T73/D4] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 2ms)
+2015-09-21 06:16:27,617 [48] INFO  Umbraco.Core.PluginManager - [P1912/T73/D4] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2015-09-21 06:16:27,620 [48] INFO  Umbraco.Core.PluginManager - [P1912/T73/D4] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 16 (took 2ms)
+2015-09-21 06:16:27,629 [48] INFO  Umbraco.Core.PluginManager - [P1912/T73/D4] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2015-09-21 06:16:27,631 [48] INFO  Umbraco.Core.PluginManager - [P1912/T73/D4] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 4 (took 2ms)
+2015-09-21 06:16:27,632 [48] INFO  Umbraco.Core.PluginManager - [P1912/T73/D4] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2015-09-21 06:16:27,634 [48] INFO  Umbraco.Core.PluginManager - [P1912/T73/D4] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 35 (took 2ms)
+2015-09-21 06:16:27,657 [48] INFO  Umbraco.Core.PluginManager - [P1912/T73/D4] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2015-09-21 06:16:27,659 [48] INFO  Umbraco.Core.PluginManager - [P1912/T73/D4] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 2ms)
+2015-09-21 06:16:27,660 [48] INFO  Umbraco.Core.PluginManager - [P1912/T73/D4] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2015-09-21 06:16:27,662 [48] INFO  Umbraco.Core.PluginManager - [P1912/T73/D4] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 2ms)
+2015-09-21 06:16:28,702 [48] INFO  Umbraco.Core.DatabaseContext - [P1912/T73/D4] CanConnect = True
+2015-09-21 06:16:28,709 [48] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - [P1912/T73/D4] Initializing Umbraco internal event handlers for cache refreshing
+2015-09-21 06:16:28,721 [48] INFO  Umbraco.Web.Search.ExamineEvents - [P1912/T73/D4] Initializing Examine and binding to business logic events
+2015-09-21 06:16:28,754 [48] INFO  Umbraco.Web.Search.ExamineEvents - [P1912/T73/D4] Adding examine event handlers for index providers: 3
+2015-09-21 06:16:28,758 [48] INFO  Umbraco.Core.CoreBootManager - [P1912/T73/D4] Umbraco application startup complete (took 1382ms)
+2015-09-21 06:16:28,886 [48] INFO  Umbraco.Core.ApplicationContext - [P1912/T73/D4] ApplicationUrl: http://localhost:52381/umbraco (UmbracoModule request)
+2015-09-21 06:16:28,918 [48] INFO  umbraco.content - [P1912/T73/D4] Load Xml from file...
+2015-09-21 06:16:28,919 [48] INFO  umbraco.content - [P1912/T73/D4] Loaded Xml from file.
+2015-09-21 06:16:29,042 [48] INFO  Umbraco.Core.PluginManager - [P1912/T73/D4] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2015-09-21 06:16:29,045 [48] INFO  Umbraco.Core.PluginManager - [P1912/T73/D4] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 23 (took 3ms)
+2015-09-21 06:17:30,165 [48] INFO  umbraco.BusinessLogic.Log - [P1912/T73/D4] Log scrubbed.  Removed all items older than 2015-07-23 06:17:30
+2015-09-21 06:24:59,847 [48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T73/D4] [KeepAlive] Terminating
+2015-09-21 06:24:59,847 [48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T73/D4] [KeepAlive] Waiting for tasks to complete
+2015-09-21 06:24:59,847 [48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T73/D4] [LogScrubber] Terminating
+2015-09-21 06:24:59,847 [48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T73/D4] [LogScrubber] Waiting for tasks to complete
+2015-09-21 06:24:59,847 [48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T73/D4] [ScheduledTasks] Terminating
+2015-09-21 06:24:59,847 [48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T73/D4] [ScheduledTasks] Waiting for tasks to complete
+2015-09-21 06:24:59,847 [48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T73/D4] [ScheduledPublishing] Terminating
+2015-09-21 06:24:59,847 [48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T73/D4] [ScheduledPublishing] Waiting for tasks to complete
+2015-09-21 06:24:59,849 [48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T73/D4] [ScheduledPublishing] Tasks completed, terminated
+2015-09-21 06:24:59,849 [48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T73/D4] [KeepAlive] Tasks completed, terminated
+2015-09-21 06:24:59,849 [48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T73/D4] [ScheduledTasks] Tasks completed, terminated
+2015-09-21 06:24:59,849 [48] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T73/D4] [LogScrubber] Tasks completed, terminated
+2015-09-21 06:25:29,949 [48] INFO  Umbraco.Core.UmbracoApplicationBase - [P1912/T73/D4] Application shutdown. Reason: ConfigurationChange
