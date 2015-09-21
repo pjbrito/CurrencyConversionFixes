@@ -136,7 +136,7 @@ function refreshCurrencyGrid(geoLocation) {
 
                     var tmpRates = getStoredLiveRates("LiveRates");
                     if (!tmpRates || isNaN(tmpRates.timestamp) ||
-                        (+new Date()) + (3600 * 1000) < (tmpRates.timestamp * 1000)) {
+                        (+new Date()) + (3600 * 1000) > (tmpRates.timestamp * 1000)) {
                         $.ajax({
                             url: 'https://openexchangerates.org/api/latest.json?app_id=024da351f3674da9b2c93dbcd2fbf9ca',
                             dataType: 'json',
