@@ -1316,3 +1316,31 @@ System.Xml.XmlException: There is no Unicode byte order mark. Cannot switch to U
 2015-09-20 22:10:39,073 [6] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T1/D2] [ScheduledPublishing] Waiting for tasks to complete
 2015-09-20 22:10:39,073 [6] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [P1912/T1/D2] [ScheduledPublishing] Tasks completed, terminated
 2015-09-20 22:11:09,091 [6] INFO  Umbraco.Core.UmbracoApplicationBase - [P1912/T1/D2] Application shutdown. Reason: BinDirChangeOrDirectoryRename
+2015-09-20 23:16:02,479 [17] INFO  Umbraco.Core.CoreBootManager - [P1912/T18/D3] Umbraco 7.2.8 application starting on ANNA
+2015-09-20 23:16:02,501 [17] INFO  Umbraco.Core.PluginManager - [P1912/T18/D3] Determining hash of code files on disk
+2015-09-20 23:16:02,508 [17] INFO  Umbraco.Core.PluginManager - [P1912/T18/D3] Hash determined (took 5ms)
+2015-09-20 23:16:02,513 [17] INFO  Umbraco.Core.PluginManager - [P1912/T18/D3] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2015-09-20 23:16:02,682 [17] INFO  Umbraco.Core.PluginManager - [P1912/T18/D3] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 37 (took 168ms)
+2015-09-20 23:16:02,725 [17] INFO  Umbraco.Core.PluginManager - [P1912/T18/D3] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2015-09-20 23:16:02,728 [17] INFO  Umbraco.Core.PluginManager - [P1912/T18/D3] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 2ms)
+2015-09-20 23:16:02,728 [17] INFO  Umbraco.Core.PluginManager - [P1912/T18/D3] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2015-09-20 23:16:02,731 [17] INFO  Umbraco.Core.PluginManager - [P1912/T18/D3] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 16 (took 2ms)
+2015-09-20 23:16:02,740 [17] INFO  Umbraco.Core.PluginManager - [P1912/T18/D3] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2015-09-20 23:16:02,743 [17] INFO  Umbraco.Core.PluginManager - [P1912/T18/D3] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 4 (took 2ms)
+2015-09-20 23:16:02,743 [17] INFO  Umbraco.Core.PluginManager - [P1912/T18/D3] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2015-09-20 23:16:02,745 [17] INFO  Umbraco.Core.PluginManager - [P1912/T18/D3] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 35 (took 2ms)
+2015-09-20 23:16:02,767 [17] INFO  Umbraco.Core.PluginManager - [P1912/T18/D3] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2015-09-20 23:16:02,770 [17] INFO  Umbraco.Core.PluginManager - [P1912/T18/D3] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 2ms)
+2015-09-20 23:16:02,770 [17] INFO  Umbraco.Core.PluginManager - [P1912/T18/D3] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2015-09-20 23:16:02,772 [17] INFO  Umbraco.Core.PluginManager - [P1912/T18/D3] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 2ms)
+2015-09-20 23:16:03,728 [17] INFO  Umbraco.Core.DatabaseContext - [P1912/T18/D3] CanConnect = True
+2015-09-20 23:16:03,733 [17] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - [P1912/T18/D3] Initializing Umbraco internal event handlers for cache refreshing
+2015-09-20 23:16:03,747 [17] INFO  Umbraco.Web.Search.ExamineEvents - [P1912/T18/D3] Initializing Examine and binding to business logic events
+2015-09-20 23:16:03,784 [17] INFO  Umbraco.Web.Search.ExamineEvents - [P1912/T18/D3] Adding examine event handlers for index providers: 3
+2015-09-20 23:16:03,790 [17] INFO  Umbraco.Core.CoreBootManager - [P1912/T18/D3] Umbraco application startup complete (took 1306ms)
+2015-09-20 23:16:03,949 [17] INFO  Umbraco.Core.ApplicationContext - [P1912/T18/D3] ApplicationUrl: http://localhost:52381/umbraco (UmbracoModule request)
+2015-09-20 23:16:03,986 [17] INFO  umbraco.content - [P1912/T18/D3] Load Xml from file...
+2015-09-20 23:16:03,987 [17] INFO  umbraco.content - [P1912/T18/D3] Loaded Xml from file.
+2015-09-20 23:16:04,125 [17] INFO  Umbraco.Core.PluginManager - [P1912/T18/D3] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2015-09-20 23:16:04,129 [17] INFO  Umbraco.Core.PluginManager - [P1912/T18/D3] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 23 (took 3ms)
+2015-09-20 23:17:05,385 [17] INFO  umbraco.BusinessLogic.Log - [P1912/T18/D3] Log scrubbed.  Removed all items older than 2015-07-22 23:17:05
